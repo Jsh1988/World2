@@ -1,5 +1,5 @@
 # Travis CI
-[![Build Status](https://travis-ci.org/Jsh1988/World.svg?branch=master)](https://travis-ci.org/Jsh1988/World)
+[![Build Status](https://travis-ci.org/Jsh1988/World2.svg?branch=master)](https://travis-ci.org/Jsh1988/World2)
 
 Постановка задани:
 Написать консольное приложение на java, с использованием maven.

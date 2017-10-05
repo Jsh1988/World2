@@ -34,17 +34,17 @@ public class Event {
         evening = dateFormat.parse(BorderEvent.EVENING.toString());
         night = dateFormat.parse(BorderEvent.NIGHT.toString());
 
-        if(current.after(morning) && current.before(day)){
+        if(current.after(morning) && current.before(day) || current.equals(morning) ){
             ress = res.getString("morning");
             log.info(ress);
             return ress;
         }
-        else if (current.after(day) && current.before(evening)){
+        else if (current.after(day) && current.before(evening) || current.equals(day) ){
             ress = res.getString("day");
             log.info(ress);
             return ress;
         }
-        else if (current.after(evening) && current.before(night)){
+        else if (current.after(evening) && current.before(night)|| current.equals(evening)){
             ress = res.getString("evening");
             log.info(ress);
             return ress;
